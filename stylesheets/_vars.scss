@@ -1,0 +1,26 @@
+// colors
+$color-white: #fff;
+$color-gray: #7a7f81;
+$color-gray-dark: #50575a;
+$color-gray-darker: #363636;
+$color-gray-light: #84898b;
+$color-gray-lighter: #dcddde;
+$color-red: #8c1424;
+
+// units
+$unit: 10px;
+
+// type
+$font-size: $unit;
+$h1-size: 27px;
+$h2-size: 20px;
+$h3-size: 14px;
+
+// grid
+$susy: (
+  columns: 12
+);
+
+// breaks
+$bp: 320px;
+$bp-large: 600px;

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= current_page.data.title %></title>
+
+    <%= stylesheet_link_tag "all" %>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <a href="http://www.chicagobooth.edu">
+          <%= image_tag "booth_logo.png", :class=>"logo" %>
+        </a>
+
+        <nav class="nav-header">
+          <ul>
+            <li><%= link_to "Lorem Ipsum", "#" %></li>
+            <li><%= link_to "Lorem Ipsum", "#" %></li>
+            <li><%= link_to "Lorem Ipsum", "#" %></li>
+            <li><%= link_to "Lorem Ipsum", "#" %></li>
+            <li><%= link_to "Lorem Ipsum", "#" %></li>
+          </ul>
+        </nav>
+
+        <div class="program-name">
+          Program Name Goes Here
+        </div>
+      </header>
+
+      <%= yield %>
+
+      <nav class="nav-footer">
+        <ul>
+          <li><%= link_to "Lorem Ipsum", "#" %></li>
+          <li><%= link_to "Lorem Ipsum", "#" %></li>
+          <li><%= link_to "Lorem Ipsum", "#" %></li>
+          <li><%= link_to "Lorem Ipsum", "#" %></li>
+          <li><%= link_to "Lorem Ipsum", "#" %></li>
+        </ul>
+      </nav>
+
+      <div class="social-content">
+        <p class="title">Connect with us</p>
+        <ul class="social-icons">
+          <li><a target="_blank" href="http://facebook.com"><i class="fa fa-fw fa-facebook"></i></a></li>
+          <li><a target="_blank" href="http://twitter.com"><i class="fa fa-fw fa-twitter"></i></a></li>
+          <li><a target="_blank" href="http://youtube.com"><i class="fa fa-fw fa-youtube-play"></i></a></li>
+          <li><a target="_blank" href="http://linkedin.com"><i class="fa fa-fw fa-linkedin"></i></a></li>
+          <li><a target="_blank" href="http://en.wikipedia.org/wiki/RSS"><i class="fa fa-fw fa-rss"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2014 The University of Chicago Booth School of Business
+      </p>
+      <p>
+        Office of XXXXXXXXXXXXXXXX, The University of Chicago Booth School of Business
+        <br>
+        5807 South Woodlawn Avenue, Chicago, Illinois 60637 | Tel:<a href="tel:+1555555555">XXX XXX XXXX</a> | Email: <a href="mailto:xxxxxx@chicagobooth.edu">XXXXXX@ChicagoBooth.edu</a>
+      </p>
+    </footer>
+  </body>
+</html>
