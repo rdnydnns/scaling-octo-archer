@@ -70,7 +70,7 @@ input {
 input
 
 a, a:visited {
-  color: inherit;
+  color: $white;
 }
 
 main {
@@ -80,8 +80,8 @@ main {
 label {
   display: block;
   position: absolute;
+  top: 0;
   right: 1rem;
-  transform: translateY(-50%);
   width: calc(100% - 2rem);
 
   &::before,
@@ -130,11 +130,12 @@ label {
       bottom: -5rem;
       font-family: 'playfair display', sans-serif;
       font-size: 5rem;
+      font-weight: 900;
       opacity: 0;
     }
   }
 
-  &:hover {
+  &.show {
     &::before {
       width: 100%;
     }

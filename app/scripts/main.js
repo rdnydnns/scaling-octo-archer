@@ -23,5 +23,13 @@ function fib(num) {
     marker.style.zIndex = `-${val}`;
     marker.innerHTML = `<span>F${i+1}</span><span>${val}</span>`;
     container.appendChild(marker);
+
+    marker.addEventListener('mouseenter', function() {
+      this.classList.add('show');
+    });
+
+    marker.addEventListener('mouseout', function() {
+      this.classList.remove('show');
+    });
   });
 }
